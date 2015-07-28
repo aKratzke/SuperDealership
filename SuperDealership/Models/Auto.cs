@@ -23,9 +23,8 @@ namespace SuperDealership.Models
         public int VIN { get; set; }
     }
 
-        public class AutoDBContext : DbContext 
+        public partial class AutoDBContext : DbContext 
     {
         public DbSet<Auto> Autos { get; set; }
-        public DbSet<User> Users { get; set; }
     }
 }

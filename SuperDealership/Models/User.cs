@@ -13,4 +13,9 @@ namespace SuperDealership.Models
         public int Age { get; set; }
         public int UserID { get; set; }
     }
+
+    public partial class AutoDBContext : DbContext
+    {
+        public DbSet<User> Users { get; set; }
+    }
 }
